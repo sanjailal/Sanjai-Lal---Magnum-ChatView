@@ -12,33 +12,47 @@
         android:layout_height="match_parent"
         android:id="@+id/rellayout">
 
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:ems="10"
+            android:gravity="center"
+            android:text="@string/initial_text"
+            android:textSize="40sp" />
+
         <com.stfalcon.chatkit.messages.MessagesList
             android:id="@+id/messagesList"
+            android:layout_above="@+id/input"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/input" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/grey">
+
+        </com.stfalcon.chatkit.messages.MessagesList>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_above="@+id/input"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:background="#fff520"/>
+            android:background="@color/purple" />
 
         <com.stfalcon.chatkit.messages.MessageInput
             android:id="@+id/input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            app:inputHint="enter"
+            app:inputHint="@string/input_hint"
             app:showAttachmentButton="false"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:text="Push me"
-            android:id="@+id/retrieve">
-        </Button>
+
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

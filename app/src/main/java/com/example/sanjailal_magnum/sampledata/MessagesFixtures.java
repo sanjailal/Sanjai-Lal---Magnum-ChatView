@@ -1,25 +1,15 @@
 package com.example.sanjailal_magnum.sampledata;
 
 import android.util.Log;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
-import com.stfalcon.chatkit.commons.ViewHolder;
-import com.stfalcon.chatkit.messages.MessagesListAdapter;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
-import java.util.Objects;
 
 
 public final class MessagesFixtures extends FixturesData {
@@ -89,8 +79,6 @@ public final class MessagesFixtures extends FixturesData {
     public void onCancelled(@NonNull DatabaseError databaseError) {
 
     }
-//    public void registerViewClickListener(int viewId, MessagesListAdapter.OnMessageViewClickListener<MESSAGE> onMessageViewClickListener) {
-//        this.viewClickListenersArray.append(viewId, onMessageViewClickListener);
-//    }
+
 
 }

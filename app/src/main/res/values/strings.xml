@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SanjaiLal_Magnum</string>
+    <string name="input_hint">Your message goes here</string>
+    <string name="initial_text">Tap here</string>
 </resources>

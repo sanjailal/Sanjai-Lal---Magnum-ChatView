@@ -1,22 +1,9 @@
 package com.example.sanjailal_magnum.sampledata;
 
-import android.util.Log;
-import android.widget.Toast;
+import com.google.firebase.database.ValueEventListener;
 
-import androidx.annotation.NonNull;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.*;
-import com.google.firebase.firestore.*;
-import com.google.firestore.v1.WriteResult;
-
-import java.lang.reflect.Type;
 import java.security.SecureRandom;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
 
 abstract class FixturesData implements ValueEventListener {

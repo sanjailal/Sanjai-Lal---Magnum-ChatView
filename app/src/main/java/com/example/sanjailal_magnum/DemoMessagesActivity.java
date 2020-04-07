@@ -9,8 +9,8 @@ import android.widget.ImageView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.sanjailal_magnum.sampledata.Message;
 import com.example.sanjailal_magnum.sampledata.MessagesFixtures;
-import com.google.firebase.firestore.FirebaseFirestore;
 import com.squareup.picasso.Picasso;
 import com.stfalcon.chatkit.commons.ImageLoader;
 import com.stfalcon.chatkit.messages.MessagesListAdapter;
@@ -18,7 +18,6 @@ import com.stfalcon.chatkit.messages.MessagesListAdapter;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import com.example.sanjailal_magnum.sampledata.Message;
 import java.util.Locale;
 
 public abstract class DemoMessagesActivity extends AppCompatActivity
