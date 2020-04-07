@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "309735435912",
+    "firebase_url": "https://sanjailal-magnum.firebaseio.com",
+    "project_id": "sanjailal-magnum",
+    "storage_bucket": "sanjailal-magnum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309735435912:android:7c7c8d89d231fd60f9793d",
+        "android_client_info": {
+          "package_name": "com.example.sanjailal_magnum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309735435912-0rh9pt8smtjk4qfg2c9sad3eotv75igq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH7OyoEAPFHtdT3d64hlBSc-w9IC0jEUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309735435912-0rh9pt8smtjk4qfg2c9sad3eotv75igq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
