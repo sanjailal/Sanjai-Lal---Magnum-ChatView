@@ -76,7 +76,7 @@ public class MainActivity extends DemoMessagesActivity
     }
 
 
-    private void retrieveData(final int noOfClick) {
+    private void retrieveData(final int noOfClick) {    // Retrieving from database
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("data")
                 .get()
@@ -95,7 +95,7 @@ public class MainActivity extends DemoMessagesActivity
                 });
     }
 
-    private void dotask(String text) {
+    private void dotask(String text) {     //adding to messagesAdapter
         super.messagesAdapter.addToStart(
                 MessagesFixtures.getTextMessage(text), true);
     }
@@ -106,7 +106,7 @@ public class MainActivity extends DemoMessagesActivity
     }
 
 
-    private void initAdapter() {
+    private void initAdapter() {      // onClick on any view takes place
         super.messagesAdapter = new MessagesListAdapter<>(super.senderId, super.imageLoader);
         super.messagesAdapter.enableSelectionMode(this);
         //Change the registerViewClickListener to any id to make it ocClick
@@ -138,7 +138,7 @@ public class MainActivity extends DemoMessagesActivity
     }
 
     @Override
-    public void onAddAttachments() {
+    public void onAddAttachments() {   // to send our file as an attachment
         super.messagesAdapter.addToStart(
                 MessagesFixtures.getImageMessage(), true);
     }
@@ -180,13 +180,15 @@ public class MainActivity extends DemoMessagesActivity
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View v) {  // onClickListener for the layout
         if (v.getId() == R.id.rellayout) {
             onTouch();
         } else if (v.getId() == R.id.editText) {
             initialtext.setVisibility(View.GONE);
             onTouch();
         }
+
+        // Check messagefixtures.java for more detail
 
     }
 

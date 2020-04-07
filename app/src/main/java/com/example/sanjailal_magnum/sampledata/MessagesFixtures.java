@@ -34,7 +34,7 @@ public final class MessagesFixtures extends FixturesData {
         return new Message(getRandomId(), getUser(), text);
     }
 
-    public static ArrayList<Message> getMessages(Date startDate) {
+    public static ArrayList<Message> getMessages(Date startDate) {  //embedding Timestamp with the message
         ArrayList<Message> messages = new ArrayList<>();
         for (int i = 0; i < 10/*days count*/; i++) {
             int countPerDay = rnd.nextInt(5) + 1;
@@ -59,7 +59,7 @@ public final class MessagesFixtures extends FixturesData {
         return messages;
     }
 
-    private static User getUser() {
+    private static User getUser() {  // getting random user everytime
         boolean even = rnd.nextBoolean();
         return new User(
                 even ? "0" : "1",
@@ -69,7 +69,7 @@ public final class MessagesFixtures extends FixturesData {
     }
 
     @Override
-    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {  // called when any value is changed in dataFixtures
         String value = dataSnapshot.getValue(String.class);
         Log.d("check", "Value is: " + value);
 
